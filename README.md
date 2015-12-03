@@ -5,8 +5,8 @@ used to test code that needs to resolve or apply source maps.
 
 ## Requirements
 
-The fixtures should work in Node 0.10 and up. Generating fixtures requires some
-ES2015 features, Node 5 or up is recommended.
+The fixtures should work in Node.js 0.10 and up. Generating fixtures requires
+some ES2015 features, Node.js 5 or up is recommended.
 
 ## Installation
 
