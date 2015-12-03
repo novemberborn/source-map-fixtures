@@ -14,6 +14,9 @@ ES2015 features, Node 5 or up is recommended.
 npm install --save-dev source-map-fixtures
 ```
 
+Source maps will only change between major versions. New fixtures or other
+features may be added in minor releases.
+
 ## Available fixtures
 
 ### `branching`
@@ -97,3 +100,5 @@ npm run generate
 ```
 
 Commit changes and open a PR!
+
+Please note that any changes to the source maps are considered breaking.
