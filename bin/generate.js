@@ -22,7 +22,7 @@ function prepareBundle () {
   })
 }
 
-function transform (filename, sourceMaps, bundle) {
+function transform (filename, bundle) {
   const opts = {
     ast: false,
     filename,
@@ -32,7 +32,7 @@ function transform (filename, sourceMaps, bundle) {
       'transform-es2015-modules-commonjs',
       'transform-strict-mode'
     ],
-    sourceMaps,
+    sourceMaps: true,
     sourceRoot: '../src'
   }
 
@@ -59,13 +59,13 @@ prepareBundle().then(bundle => {
   glob.sync('*.js', { cwd: srcDir }).forEach(filename => {
     const name = path.basename(filename, '.js')
 
-    const inline = transform(filename, 'inline', bundle)
-    const mapFile = transform(filename, true, bundle)
+    const transformed = transform(filename, bundle)
+    const encodedMap = new Buffer(JSON.stringify(transformed.map)).toString('base64')
 
-    writeJs(name, 'inline', inline.code)
-    writeJs(name, 'map-file', mapFile.code + '\n//# sourceMappingURL=' + name + '-map-file.js.map')
-    writeMap(name, 'map-file', mapFile.map)
-    writeJs(name, 'none', mapFile.code)
+    writeJs(name, 'inline', transformed.code + '\n//# sourceMappingURL=data:application/json;base64,' + encodedMap)
+    writeJs(name, 'map-file', transformed.code + '\n//# sourceMappingURL=' + name + '-map-file.js.map')
+    writeMap(name, 'map-file', transformed.map)
+    writeJs(name, 'none', transformed.code)
   })
 }).catch(err => {
   console.error(err && err.stack || err)
