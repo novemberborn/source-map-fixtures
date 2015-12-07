@@ -5,6 +5,7 @@ var path = require('path')
 
 function fixture (name, type) {
   var file = path.join(__dirname, 'fixtures', name + '-' + type + '.js')
+  var sourceFile = path.join(__dirname, 'src', name + '.js')
   var content = null
   var sourceContent = null
 
@@ -12,6 +13,7 @@ function fixture (name, type) {
     name: name,
     type: type,
     file: file,
+    sourceFile: sourceFile,
     require: function () {
       return require(file)
     },
@@ -23,7 +25,7 @@ function fixture (name, type) {
     },
     sourceContentSync: function () {
       if (!sourceContent) {
-        sourceContent = fs.readFileSync(path.join(__dirname, 'src', name + '.js'), 'utf8')
+        sourceContent = fs.readFileSync(sourceFile, 'utf8')
       }
       return sourceContent
     }

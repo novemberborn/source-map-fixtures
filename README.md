@@ -78,6 +78,10 @@ Provides the source map type of the fixture (`inline`, `map-file`, `none`).
 
 Provides the full path to the fixture file.
 
+### `fixture.sourceFile`
+
+Provides the full path to the fixture's source file.
+
 ### `fixture.require()`
 
 Requires the fixture file (returns it as a module).
