@@ -18,6 +18,7 @@ function prepareBundle () {
   return rollup.rollup({ entry: path.join(srcDir, 'bundle.js') }).then(bundle => {
     const generated = bundle.generate({ sourceMap: true })
     generated.map.sources = generated.map.sources.map(source => path.basename(source))
+    generated.map.sourceRoot = '../src'
     return generated
   })
 }

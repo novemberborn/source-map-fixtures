@@ -12,5 +12,6 @@
     "const q = a => {\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n"
   ],
   "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC;;;ACAlE,IAAM,CAAC,GAAG;SAAM;;;ACAhB,IAAM,CAAC,GAAG,WAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO"
+  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC;;;ACAlE,IAAM,CAAC,GAAG;SAAM;;;ACAhB,IAAM,CAAC,GAAG,WAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO",
+  "sourceRoot": "../src"
 }
