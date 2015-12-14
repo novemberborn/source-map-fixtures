@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [
+    "istanbul-ignore.js"
+  ],
+  "names": [],
+  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,UAAA,CAAC,EAAI;;AAEb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO,IAAI,CAAA;GACZ;CACF,CAAA;QACa,GAAG,GAAR,CAAC",
+  "file": "istanbul-ignore.js",
+  "sourceRoot": "../src",
+  "sourcesContent": [
+    "const q = a => {\n  /* istanbul ignore if */\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n"
+  ]
+}

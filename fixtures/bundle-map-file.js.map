@@ -4,14 +4,18 @@
   "sources": [
     "throws.js",
     "simple.js",
+    "istanbul-ignore.js",
     "branching.js"
   ],
   "sourcesContent": [
     "const t = () => { throw new Error('Thrown by source-map-fixtures') }\nexport { t as run }\n",
     "const i = () => 42\nexport { i as run }\n",
+    "const q = a => {\n  /* istanbul ignore if */\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n",
     "const q = a => {\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n"
   ],
-  "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC;;;ACAlE,IAAM,CAAC,GAAG;SAAM;;;ACAhB,IAAM,CAAC,GAAG,WAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO",
+  "names": [
+    "q"
+  ],
+  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC;;;ACAlE,IAAM,CAAC,GAAG;SAAM;;;ACAhB,IAAM,GAAC,GAAG,WAAC,EAAI;;AAEb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO;;;;ACHX,IAAM,CAAC,GAAG,WAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO",
   "sourceRoot": "../src"
 }

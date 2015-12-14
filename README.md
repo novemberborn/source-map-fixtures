@@ -24,6 +24,20 @@ features may be added in minor releases.
 See `src/branching.js`. Exports a `run(value)` function which returns `true` if
 `value === 42`, else returns `undefined`.
 
+### `istanbul-ignore`
+
+Like `branching`, but the if condition is prefaced with a `/* istanbul ignore if */`
+comment.
+
+When running `branching` with `value !== 42` the statement body won't execute.
+If you're using the fixture to test a code coverage tool that line will show up
+as missing coverage. If instead you use the `istanbul-ignore` fixture the
+coverage report will ignore the statement body.
+
+If the exported `run(value)` is called with a value other than `42` the
+statement body won't execute, but this does not result in missing coverage. It
+would in the `branching` fixture.
+
 ### `simple`
 
 See `src/simple.js`. Exports a `run()` function which returns `42`.
@@ -35,7 +49,7 @@ See `src/throws.js`. Exports a `run()` function which returns throws an error.
 ### `bundle`
 
 See `src/bundle.js`. Bundled version of the above fixtures, exports
-`branching(value)`, `simple()` etc.
+`branching(value)`, `istanbulIgnore()`, `simple()` etc.
 
 ## Available source map types
 
