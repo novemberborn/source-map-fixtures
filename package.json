@@ -26,17 +26,18 @@
   ],
   "scripts": {
     "generate": "node bin/generate.js",
-    "lint": "standard",
-    "pretest": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "posttest": "standard"
   },
   "devDependencies": {
+    "ava": "^0.9.1",
     "babel-core": "^6.2.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.1.18",
     "babel-plugin-transform-es2015-block-scoping": "^6.1.18",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
     "babel-plugin-transform-strict-mode": "^6.2.0",
-    "glob": "^6.0.1",
+    "glob": "^6.0.4",
+    "md5-hex": "^1.2.1",
     "rimraf": "^2.4.4",
     "rollup": "^0.24.1",
     "standard": "^5.4.1"
