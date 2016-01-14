@@ -66,8 +66,5 @@ module.exports = function generate (srcDir, destDir) {
       writeMap(name, 'map-file', transformed.map)
       writeJs(name, 'none', transformed.code)
     })
-  }).catch(err => {
-    console.error(err && err.stack || err)
-    process.exit(1)
   })
 }

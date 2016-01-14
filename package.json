@@ -25,6 +25,7 @@
     "index.js"
   ],
   "scripts": {
+    "coverage": "nyc npm test",
     "generate": "node bin/generate.js",
     "test": "ava",
     "posttest": "standard"
@@ -49,5 +50,8 @@
     "ignore": [
       "fixtures/"
     ]
+  },
+  "nyc": {
+    "exclude": ["src", "fixtures"]
   }
 }
