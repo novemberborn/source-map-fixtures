@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "ava": "^0.10.0",
-    "babel-core": "^6.2.1",
+    "babel-core": "^6.4.5",
     "babel-plugin-transform-es2015-arrow-functions": "^6.1.18",
     "babel-plugin-transform-es2015-block-scoping": "^6.1.18",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
