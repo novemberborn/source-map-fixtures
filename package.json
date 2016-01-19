@@ -35,7 +35,7 @@
     "babel-core": "^6.2.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.1.18",
     "babel-plugin-transform-es2015-block-scoping": "^6.1.18",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.4.5",
     "babel-plugin-transform-strict-mode": "^6.2.0",
     "glob": "^6.0.4",
     "md5-hex": "^1.2.1",
