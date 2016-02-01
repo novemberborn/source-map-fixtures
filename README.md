@@ -107,16 +107,3 @@ Synchronously reads the fixture file's content from disk.
 ### `fixture.sourceContentSync()`
 
 Synchronously reads the fixture's source's content from disk.
-
-## Generating fixtures
-
-Edit or add new source files in the `src/` directory. Please update this readme
-as appropriate. Then run the following to generate the fixtures:
-
-```
-npm run generate
-```
-
-Commit changes and open a PR!
-
-Please note that any changes to the source maps are considered breaking.
