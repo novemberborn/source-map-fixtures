@@ -1,6 +1,6 @@
 {
   "name": "source-map-fixtures",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple test fixtures backed by inline source maps and source map files",
   "keywords": [
     "source-map",
