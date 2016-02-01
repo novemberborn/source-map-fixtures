@@ -26,17 +26,19 @@ See `src/branching.js`. Exports a `run(value)` function which returns `true` if
 
 ### `istanbul-ignore`
 
-Like `branching`, but the if condition is prefaced with a `/* istanbul ignore if */`
+Like `branching`, but the if condition is prefaced with a `/* istanbul ignore if
+ */`
 comment.
-
-When running `branching` with `value !== 42` the statement body won't execute.
-If you're using the fixture to test a code coverage tool that line will show up
-as missing coverage. If instead you use the `istanbul-ignore` fixture the
-coverage report will ignore the statement body.
 
 If the exported `run(value)` is called with a value other than `42` the
 statement body won't execute, but this does not result in missing coverage. It
 would in the `branching` fixture.
+
+### `istanbul-ignore-fn`
+
+Like `istanbul-ignore`, but the if condition guards a function call. The
+function declaration is prefaced with `/* istanbul ignore next */`. The function
+won't execute unless the exported `run(value)` is called with `42`.
 
 ### `simple`
 
