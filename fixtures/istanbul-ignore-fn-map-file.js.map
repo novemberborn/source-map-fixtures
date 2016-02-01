@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [
+    "istanbul-ignore-fn.js"
+  ],
+  "names": [],
+  "mappings": ";;;;;AAAA,IAAM,IAAI,aAAK;AACb,MAAI,MAAM,EAAN,EAAU;AACZ,WAAO,KAAP,CADY;GAAd;CADQ;QAKI,MAAL;;;;AAGT,IAAM,MAAM,YAAM,EAAN",
+  "file": "istanbul-ignore-fn.js",
+  "sourceRoot": "../src",
+  "sourcesContent": [
+    "const q = a => {\n  if (a === 42) {\n    return bar()\n  }\n}\nexport { q as run }\n\n/* istanbul ignore next */\nconst bar = () => {}\n"
+  ]
+}

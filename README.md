@@ -38,6 +38,12 @@ If the exported `run(value)` is called with a value other than `42` the
 statement body won't execute, but this does not result in missing coverage. It
 would in the `branching` fixture.
 
+### `istanbul-ignore-fn`
+
+Like `istanbul-ignore`, but the if condition guards a function call. The
+function declaration is prefaced with `/* istanbul ignore next */`. The function
+won't execute unless the exported `run(value)` is called with `42`.
+
 ### `simple`
 
 See `src/simple.js`. Exports a `run()` function which returns `42`.
