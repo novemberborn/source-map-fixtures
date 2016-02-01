@@ -3,12 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var t = function () {
-  throw new Error('Thrown by source-map-fixtures');
-};
-
-var i = function () {
-  return 42;
+var q = function (a) {
+  if (a === 42) {
+    return true;
+  }
 };
 
 var q$1 = function (a) {
@@ -18,10 +16,12 @@ var q$1 = function (a) {
   }
 };
 
-var q = function (a) {
-  if (a === 42) {
-    return true;
-  }
+var i = function () {
+  return 42;
+};
+
+var t = function () {
+  throw new Error('Thrown by source-map-fixtures');
 };
 
 exports.branching = q;

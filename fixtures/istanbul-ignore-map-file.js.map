@@ -4,7 +4,7 @@
     "istanbul-ignore.js"
   ],
   "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,UAAA,CAAC,EAAI;;AAEb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO,IAAI,CAAA;GACZ;CACF,CAAA;QACa,GAAG,GAAR,CAAC",
+  "mappings": ";;;;;AAAA,IAAM,IAAI,aAAK;;AAEb,MAAI,MAAM,EAAN,EAAU;AACZ,WAAO,IAAP,CADY;GAAd;CAFQ;QAMI,MAAL",
   "file": "istanbul-ignore.js",
   "sourceRoot": "../src",
   "sourcesContent": [

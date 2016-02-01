@@ -2,20 +2,20 @@
   "version": 3,
   "file": null,
   "sources": [
-    "throws.js",
-    "simple.js",
+    "branching.js",
     "istanbul-ignore.js",
-    "branching.js"
+    "simple.js",
+    "throws.js"
   ],
   "sourcesContent": [
-    "const t = () => { throw new Error('Thrown by source-map-fixtures') }\nexport { t as run }\n",
-    "const i = () => 42\nexport { i as run }\n",
+    "const q = a => {\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n",
     "const q = a => {\n  /* istanbul ignore if */\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n",
-    "const q = a => {\n  if (a === 42) {\n    return true\n  }\n}\nexport { q as run }\n"
+    "const i = () => 42\nexport { i as run }\n",
+    "const t = () => { throw new Error('Thrown by source-map-fixtures') }\nexport { t as run }\n"
   ],
   "names": [
     "q"
   ],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC;CAAE;;ACApE,IAAM,CAAC,GAAG;SAAM;CAAE;;ACAlB,IAAM,GAAC,GAAG,WAAC,EAAI;;AAEb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO,IAAI;GACZ;CACF;;ACLD,IAAM,CAAC,GAAG,WAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO,IAAI;GACZ;CACF",
+  "mappings": ";;;;;AAAA,IAAM,AAAC,iBAAQ;AACb,MAAI,AAAC,MAAK,AAAE,IAAE;AACZ,WAAO,AAAI,AACZ,AACF;;CAJS,AAAC;;ACAX,IAAM,AAAC,mBAAQ;;AAEb,MAAI,AAAC,MAAK,AAAE,IAAE;AACZ,WAAO,AAAI,AACZ,AACF;;CALS,AAAC;;ACAX,IAAM,AAAC;SAAS,AAAE;CAAR;;ACAV,IAAM,AAAC,gBAAS;AAAE,QAAM,IAAI,AAAK,MAAC,AAA+B,AAAC,AAAE;CAA1D",
   "sourceRoot": "../src"
 }

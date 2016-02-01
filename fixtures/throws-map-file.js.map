@@ -4,7 +4,7 @@
     "throws.js"
   ],
   "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,YAAM;AAAE,QAAM,IAAI,KAAK,CAAC,+BAA+B,CAAC,CAAA;CAAE,CAAA;QACtD,GAAG,GAAR,CAAC",
+  "mappings": ";;;;;AAAA,IAAM,IAAI,YAAM;AAAE,QAAM,IAAI,KAAJ,CAAU,+BAAV,CAAN,CAAF;CAAN;QACI,MAAL",
   "file": "throws.js",
   "sourceRoot": "../src",
   "sourcesContent": [

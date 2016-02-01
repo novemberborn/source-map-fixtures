@@ -4,7 +4,7 @@
     "branching.js"
   ],
   "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG,UAAA,CAAC,EAAI;AACb,MAAI,CAAC,KAAK,EAAE,EAAE;AACZ,WAAO,IAAI,CAAA;GACZ;CACF,CAAA;QACa,GAAG,GAAR,CAAC",
+  "mappings": ";;;;;AAAA,IAAM,IAAI,aAAK;AACb,MAAI,MAAM,EAAN,EAAU;AACZ,WAAO,IAAP,CADY;GAAd;CADQ;QAKI,MAAL",
   "file": "branching.js",
   "sourceRoot": "../src",
   "sourcesContent": [

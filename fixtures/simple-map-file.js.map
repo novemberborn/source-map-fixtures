@@ -4,7 +4,7 @@
     "simple.js"
   ],
   "names": [],
-  "mappings": ";;;;;AAAA,IAAM,CAAC,GAAG;SAAM,EAAE;CAAA,CAAA;QACJ,GAAG,GAAR,CAAC",
+  "mappings": ";;;;;AAAA,IAAM,IAAI;SAAM;CAAN;QACI,MAAL",
   "file": "simple.js",
   "sourceRoot": "../src",
   "sourcesContent": [
