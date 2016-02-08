@@ -48,7 +48,8 @@
   },
   "standard": {
     "ignore": [
-      "fixtures/"
+      "fixtures/",
+      "src/"
     ]
   },
   "nyc": {

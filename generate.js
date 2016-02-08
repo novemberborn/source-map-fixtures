@@ -13,9 +13,9 @@ module.exports = function generate (srcDir, destDir) {
   fs.mkdirSync(destDir)
 
   function prepareBundle () {
-    return rollup.rollup({ entry: path.join(srcDir, 'bundle.js') }).then(bundle => {
+    return rollup.rollup({ entry: path.join(srcDir, 'bundle.js') }).then((bundle) => {
       const generated = bundle.generate({ sourceMap: true })
-      generated.map.sources = generated.map.sources.map(source => path.basename(source))
+      generated.map.sources = generated.map.sources.map((source) => path.basename(source))
       generated.map.sourceRoot = '../src'
       return generated
     })
@@ -54,8 +54,8 @@ module.exports = function generate (srcDir, destDir) {
     fs.writeFileSync(path.join(destDir, name + '-' + type + '.js.map'), JSON.stringify(map, null, 2) + '\n')
   }
 
-  return prepareBundle().then(bundle => {
-    glob.sync('*.js', { cwd: srcDir }).forEach(filename => {
+  return prepareBundle().then((bundle) => {
+    glob.sync('*.js', { cwd: srcDir }).forEach((filename) => {
       const name = path.basename(filename, '.js')
 
       const transformed = transform(filename, bundle)

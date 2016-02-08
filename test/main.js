@@ -17,7 +17,7 @@ const main = proxyquire('../', {
   fs: { readFileSync }
 })
 
-glob.sync('*.js', { cwd: srcDir, strict: true }).map(file => basename(file, '.js')).forEach(name => {
+glob.sync('*.js', { cwd: srcDir, strict: true }).map((file) => basename(file, '.js')).forEach((name) => {
   ;[
     { member: 'inline', type: 'inline' },
     { member: 'mapFile', type: 'map-file' },
@@ -25,23 +25,23 @@ glob.sync('*.js', { cwd: srcDir, strict: true }).map(file => basename(file, '.js
   ].forEach(({ member, type }) => {
     const wrapper = () => main[member](name)
 
-    test(`${name}-${type}: wrapper has the correct name`, t => {
+    test(`${name}-${type}: wrapper has the correct name`, (t) => {
       t.is(wrapper().name, name)
     })
 
-    test(`${name}-${type}: wrapper has the correct type`, t => {
+    test(`${name}-${type}: wrapper has the correct type`, (t) => {
       t.is(wrapper().type, type)
     })
 
-    test(`${name}-${type}: wrapper points at the correct file`, t => {
+    test(`${name}-${type}: wrapper points at the correct file`, (t) => {
       t.is(wrapper().file, join(fixturesDir, `${name}-${type}.js`))
     })
 
-    test(`${name}-${type}: wrapper points at the correct source file`, t => {
+    test(`${name}-${type}: wrapper points at the correct source file`, (t) => {
       t.is(wrapper().sourceFile, join(srcDir, `${name}.js`))
     })
 
-    test(`${name}-${type}: fixture can be required`, t => {
+    test(`${name}-${type}: fixture can be required`, (t) => {
       t.is(wrapper().require(), require(join(fixturesDir, `${name}-${type}.js`)))
     })
 
@@ -49,7 +49,7 @@ glob.sync('*.js', { cwd: srcDir, strict: true }).map(file => basename(file, '.js
       { label: 'content', method: 'contentSync', sourceProp: 'file' },
       { label: 'source content', method: 'sourceContentSync', sourceProp: 'sourceFile' }
     ].forEach(({ label, method, sourceProp }) => {
-      test.serial(`${name}-${type}: ${label} can be loaded`, t => {
+      test.serial(`${name}-${type}: ${label} can be loaded`, (t) => {
         t.ok(readFileSync.notCalled)
         const expected = Symbol()
         readFileSync.returns(expected)
@@ -64,7 +64,7 @@ glob.sync('*.js', { cwd: srcDir, strict: true }).map(file => basename(file, '.js
         t.is(actual, expected)
       })
 
-      test.serial(`${name}-${type}: ${label} is cached`, t => {
+      test.serial(`${name}-${type}: ${label} is cached`, (t) => {
         t.ok(readFileSync.notCalled)
         readFileSync.returns(Symbol())
 
