@@ -2958,9 +2958,9 @@
       "resolved": "https://registry.npmjs.org/rocambole-whitespace/-/rocambole-whitespace-1.0.0.tgz"
     },
     "rollup": {
-      "version": "0.25.2",
-      "from": "rollup@latest",
-      "resolved": "https://registry.npmjs.org/rollup/-/rollup-0.25.2.tgz",
+      "version": "0.25.3",
+      "from": "rollup@0.25.3",
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-0.25.3.tgz",
       "dependencies": {
         "minimist": {
           "version": "1.2.0",
