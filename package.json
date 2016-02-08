@@ -53,8 +53,9 @@
   },
   "nyc": {
     "exclude": [
+      "fixtures",
       "src",
-      "fixtures"
+      "test"
     ]
   }
 }
