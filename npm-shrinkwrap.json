@@ -1331,14 +1331,7 @@
         "source-map": {
           "version": "0.2.0",
           "from": "source-map@>=0.2.0 <0.3.0",
-          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.2.0.tgz",
-          "dependencies": {
-            "amdefine": {
-              "version": "1.0.0",
-              "from": "amdefine@1.0.0",
-              "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
-            }
-          }
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.2.0.tgz"
         }
       }
     },
@@ -2513,9 +2506,9 @@
       "resolved": "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.0.tgz"
     },
     "nyc": {
-      "version": "5.5.0",
-      "from": "nyc@>=5.5.0 <6.0.0",
-      "resolved": "https://registry.npmjs.org/nyc/-/nyc-5.5.0.tgz"
+      "version": "5.6.0",
+      "from": "nyc@5.6.0",
+      "resolved": "https://registry.npmjs.org/nyc/-/nyc-5.6.0.tgz"
     },
     "object-assign": {
       "version": "4.0.1",
