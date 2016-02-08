@@ -2751,9 +2751,9 @@
       "resolved": "https://registry.npmjs.org/protochain/-/protochain-1.0.3.tgz"
     },
     "proxyquire": {
-      "version": "1.7.3",
-      "from": "proxyquire@>=1.7.3 <2.0.0",
-      "resolved": "https://registry.npmjs.org/proxyquire/-/proxyquire-1.7.3.tgz"
+      "version": "1.7.4",
+      "from": "proxyquire@1.7.4",
+      "resolved": "https://registry.npmjs.org/proxyquire/-/proxyquire-1.7.4.tgz"
     },
     "pseudomap": {
       "version": "1.0.2",
