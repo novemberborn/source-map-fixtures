@@ -3282,9 +3282,9 @@
       "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.5.2.tgz"
     },
     "rollup": {
-      "version": "0.25.3",
-      "from": "rollup@0.25.3",
-      "resolved": "https://registry.npmjs.org/rollup/-/rollup-0.25.3.tgz",
+      "version": "0.25.4",
+      "from": "rollup@latest",
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-0.25.4.tgz",
       "dependencies": {
         "minimist": {
           "version": "1.2.0",
@@ -3294,13 +3294,7 @@
         "source-map": {
           "version": "0.1.32",
           "from": "source-map@0.1.32",
-          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.32.tgz",
-          "dependencies": {
-            "amdefine": {
-              "version": "1.0.0",
-              "from": "amdefine@>=0.0.4"
-            }
-          }
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.32.tgz"
         },
         "source-map-support": {
           "version": "0.3.3",
