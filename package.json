@@ -43,7 +43,7 @@
     "proxyquire": "^1.7.4",
     "rimraf": "^2.5.2",
     "rollup": "0.25.3",
-    "sinon": "^2.0.0-pre",
+    "sinon": "^1.17.3",
     "standard": "^6.0.5"
   },
   "standard": {
