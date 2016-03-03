@@ -44,7 +44,7 @@
     "rimraf": "^2.5.2",
     "rollup": "0.25.3",
     "sinon": "^1.17.3",
-    "standard": "^6.0.5"
+    "standard": "^6.0.7"
   },
   "standard": {
     "ignore": [
