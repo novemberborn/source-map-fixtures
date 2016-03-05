@@ -35,7 +35,7 @@
     "babel-core": "6.6.4",
     "babel-plugin-transform-es2015-arrow-functions": "6.5.2",
     "babel-plugin-transform-es2015-block-scoping": "6.6.4",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.6.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.6.5",
     "babel-plugin-transform-strict-mode": "6.6.4",
     "glob": "^7.0.0",
     "md5-hex": "^1.2.1",
@@ -61,6 +61,11 @@
   },
   "ava": {
     "files": "test/*.js",
-    "source": ["*.js", "package.json", "fixtures/*.js", "src/*.js"]
+    "source": [
+      "*.js",
+      "package.json",
+      "fixtures/*.js",
+      "src/*.js"
+    ]
   }
 }
