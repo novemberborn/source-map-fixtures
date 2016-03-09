@@ -61,6 +61,11 @@
   },
   "ava": {
     "files": "test/*.js",
-    "source": ["*.js", "package.json", "fixtures/*.js", "src/*.js"]
+    "source": [
+      "*.js",
+      "package.json",
+      "fixtures/*.js",
+      "src/*.js"
+    ]
   }
 }
