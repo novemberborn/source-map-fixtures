@@ -1773,9 +1773,9 @@
       "resolved": "https://registry.npmjs.org/get-stdin/-/get-stdin-4.0.1.tgz"
     },
     "glob": {
-      "version": "7.0.0",
-      "from": "glob@7.0.0",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.0.tgz"
+      "version": "7.0.3",
+      "from": "glob@7.0.3",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.3.tgz"
     },
     "glob-base": {
       "version": "0.3.0",
