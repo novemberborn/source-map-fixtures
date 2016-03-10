@@ -31,7 +31,7 @@
     "posttest": "standard"
   },
   "devDependencies": {
-    "ava": "^0.12.0",
+    "ava": "^0.13.0",
     "babel-core": "6.7.0",
     "babel-plugin-transform-es2015-arrow-functions": "6.5.2",
     "babel-plugin-transform-es2015-block-scoping": "6.7.0",
