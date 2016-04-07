@@ -50,14 +50,14 @@ glob.sync('*.js', { cwd: srcDir, strict: true }).map((file) => basename(file, '.
       { label: 'source content', method: 'sourceContentSync', sourceProp: 'sourceFile' }
     ].forEach(({ label, method, sourceProp }) => {
       test.serial(`${name}-${type}: ${label} can be loaded`, (t) => {
-        t.ok(readFileSync.notCalled)
+        t.truthy(readFileSync.notCalled)
         const expected = Symbol()
         readFileSync.returns(expected)
 
         const w = wrapper()
         const actual = w[method]()
 
-        t.ok(readFileSync.calledOnce)
+        t.truthy(readFileSync.calledOnce)
         const { args: [file, encoding] } = readFileSync.firstCall
         t.is(file, w[sourceProp])
         t.is(encoding, 'utf8')
@@ -65,14 +65,14 @@ glob.sync('*.js', { cwd: srcDir, strict: true }).map((file) => basename(file, '.
       })
 
       test.serial(`${name}-${type}: ${label} is cached`, (t) => {
-        t.ok(readFileSync.notCalled)
+        t.truthy(readFileSync.notCalled)
         readFileSync.returns(Symbol())
 
         const w = wrapper()
         const expected = w[method]()
         const cached = w[method]()
 
-        t.ok(readFileSync.calledOnce)
+        t.truthy(readFileSync.calledOnce)
         t.is(cached, expected)
       })
     })

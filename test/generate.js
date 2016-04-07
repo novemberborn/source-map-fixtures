@@ -17,7 +17,7 @@ test.before(() => generate(srcDir, outputDir))
 
 test('generates the same files', (t) => {
   const output = glob.sync('*.{js,js.map}', { cwd: outputDir, strict: true })
-  t.same(output, fixtures)
+  t.deepEqual(output, fixtures)
 })
 
 for (const file of fixtures) {
