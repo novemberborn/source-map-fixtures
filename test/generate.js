@@ -15,13 +15,13 @@ const fixtures = glob.sync('*.{js,js.map}', { cwd: fixturesDir, strict: true })
 
 test.before(() => generate(srcDir, outputDir))
 
-test('generates the same files', (t) => {
+test('generates the same files', t => {
   const output = glob.sync('*.{js,js.map}', { cwd: outputDir, strict: true })
   t.deepEqual(output, fixtures)
 })
 
 for (const file of fixtures) {
-  test(`'${file}' is equivalent`, (t) => {
+  test(`'${file}' is equivalent`, t => {
     const actual = md5hex(readFileSync(join(outputDir, file)))
     const expected = md5hex(readFileSync(join(fixturesDir, file)))
     t.is(actual, expected)
