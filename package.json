@@ -44,7 +44,7 @@
     "proxyquire": "^1.7.4",
     "rimraf": "^2.5.2",
     "rollup": "0.25.8",
-    "sinon": "^1.17.3"
+    "sinon": "^1.17.4"
   },
   "as-i-preach": {
     "ignore": [
