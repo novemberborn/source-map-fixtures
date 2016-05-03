@@ -37,7 +37,7 @@
     "babel-plugin-transform-es2015-arrow-functions": "6.5.2",
     "babel-plugin-transform-es2015-block-scoping": "6.7.1",
     "babel-plugin-transform-es2015-modules-commonjs": "6.7.4",
-    "babel-plugin-transform-strict-mode": "6.6.5",
+    "babel-plugin-transform-strict-mode": "6.8.0",
     "glob": "^7.0.3",
     "md5-hex": "^1.2.1",
     "nyc": "^6.2.1",
