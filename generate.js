@@ -55,7 +55,7 @@ module.exports = function generate (srcDir, destDir) {
   }
 
   return prepareBundle().then(bundle => {
-    glob.sync('*.js', { cwd: srcDir }).forEach(filename => {
+    return glob.sync('*.js', { cwd: srcDir }).forEach(filename => {
       const name = path.basename(filename, '.js')
 
       const transformed = transform(filename, bundle)
