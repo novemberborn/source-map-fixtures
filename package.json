@@ -27,7 +27,7 @@
   "scripts": {
     "coverage": "nyc npm test",
     "generate": "node bin/generate.js",
-    "test": "ava",
+    "test": "node bin/test.js",
     "posttest": "as-i-preach"
   },
   "devDependencies": {
