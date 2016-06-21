@@ -67,5 +67,12 @@
       "src",
       "test"
     ]
+  },
+  "greenkeeper": {
+    "ignore": [
+      "babel-core",
+      "babel-generator",
+      "rollup"
+    ]
   }
 }
