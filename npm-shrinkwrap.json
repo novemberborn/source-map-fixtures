@@ -2667,6 +2667,11 @@
       "from": "formatio@1.1.1",
       "resolved": "https://registry.npmjs.org/formatio/-/formatio-1.1.1.tgz"
     },
+    "fs.realpath": {
+      "version": "1.0.0",
+      "from": "fs.realpath@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
+    },
     "fsevents": {
       "version": "1.0.12",
       "from": "fsevents@>=1.0.0 <2.0.0",
@@ -2729,9 +2734,16 @@
       "resolved": "https://registry.npmjs.org/get-stdin/-/get-stdin-4.0.1.tgz"
     },
     "glob": {
-      "version": "7.0.3",
-      "from": "glob@7.0.3",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.3.tgz"
+      "version": "7.0.5",
+      "from": "glob@latest",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.5.tgz",
+      "dependencies": {
+        "minimatch": {
+          "version": "3.0.2",
+          "from": "minimatch@>=3.0.2 <4.0.0",
+          "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.2.tgz"
+        }
+      }
     },
     "glob-base": {
       "version": "0.3.0",
