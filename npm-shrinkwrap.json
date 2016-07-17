@@ -3930,9 +3930,9 @@
       "resolved": "https://registry.npmjs.org/progress/-/progress-1.1.8.tgz"
     },
     "proxyquire": {
-      "version": "1.7.9",
+      "version": "1.7.10",
       "from": "proxyquire@latest",
-      "resolved": "https://registry.npmjs.org/proxyquire/-/proxyquire-1.7.9.tgz"
+      "resolved": "https://registry.npmjs.org/proxyquire/-/proxyquire-1.7.10.tgz"
     },
     "pseudomap": {
       "version": "1.0.2",
