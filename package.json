@@ -63,6 +63,7 @@
   },
   "nyc": {
     "exclude": [
+      "bin/test.js",
       "fixtures",
       "src",
       "test"
