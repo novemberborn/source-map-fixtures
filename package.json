@@ -34,7 +34,7 @@
     "@novemberborn/as-i-preach": "^4.0.2",
     "ava": "^0.16.0",
     "babel-core": "6.7.4",
-    "babel-generator": "6.7.2",
+    "babel-generator": "6.9.0",
     "babel-plugin-transform-es2015-arrow-functions": "6.8.0",
     "babel-plugin-transform-es2015-block-scoping": "6.10.1",
     "babel-plugin-transform-es2015-modules-commonjs": "6.10.3",
