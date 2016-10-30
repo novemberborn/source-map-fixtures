@@ -72,6 +72,7 @@
   },
   "greenkeeper": {
     "ignore": [
+      "@novemberborn/as-i-preach",
       "babel-core",
       "babel-generator",
       "rollup"
