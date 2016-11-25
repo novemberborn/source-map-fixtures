@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@novemberborn/as-i-preach": "^5.0.0",
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "babel-core": "6.7.4",
     "babel-generator": "6.7.2",
     "babel-plugin-transform-es2015-arrow-functions": "6.8.0",
