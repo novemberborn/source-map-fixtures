@@ -28,8 +28,7 @@ module.exports = function generate (srcDir, destDir) {
       plugins: [
         'transform-es2015-arrow-functions',
         'transform-es2015-block-scoping',
-        'transform-es2015-modules-commonjs',
-        'transform-strict-mode'
+        'transform-es2015-modules-commonjs'
       ],
       sourceMaps: true,
       sourceRoot: '../src'
